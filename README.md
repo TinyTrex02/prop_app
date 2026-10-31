@@ -1,6 +1,9 @@
 # Prop Hedge Optimizer
 
-A browser-only Next.js app for modelling a prop-firm evaluation, personal-account hedge, and funded payout path. Designed for deployment to Vercel.
+A browser-only Next.js app for modelling a prop-firm evaluation, personal-account hedge, and funded payout path.
+
+**Live app:** https://propapp-nine.vercel.app  
+**Repo:** https://github.com/TinyTrex02/prop_app
 
 ## Run locally
 
@@ -11,12 +14,25 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Deploy to Vercel
+## Deployment
 
-1. Push this folder to a GitHub repository.
-2. Import the repository in Vercel.
-3. Keep the framework preset as Next.js.
-4. Deploy. No environment variables or database are required.
+Hosted on Vercel and connected to this GitHub repo. Every push to `main` triggers a new production deploy, usually live in under a minute.
+
+```bash
+git add .
+git commit -m "describe the change"
+git push
+```
+
+Manual deploy from the CLI, if needed:
+
+```bash
+npm install -g vercel
+vercel login
+vercel --prod
+```
+
+Framework preset is Next.js with default build settings. No environment variables or database are required.
 
 ## What it currently models
 
